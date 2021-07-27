@@ -41,11 +41,120 @@ html {
     justify-content: center;
     width: 100%;
     background-color: #dfdfdf;
+    -webkit-box-shadow: inset 0px 5px 8px -6px rgba(0, 0, 0, 0.47);
+    box-shadow: inset 0px 5px 8px -6px rgba(0, 0, 0, 0.47);
   }
 
+  #title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  #title-text #title-text-btn {
+    border-radius: 30px;
+    background: #cd56dc;
+    background: linear-gradient(166deg, #cd56dc 43%, #9356dc 100%);
+    color: white;
+    height: 40px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-selector, .nav-selector div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-selector {
+    border-radius: 20px;
+    background-color: #f7f7f7;
+    position: relative;
+    width: 90%;
+    margin-bottom: 15px;
+    height: 60px;
+  }
+  .nav-selector .nav-selector-number {
+    position: absolute;
+    left: -5px;
+    border-radius: 30px;
+    background-color: #9356DC;
+    color: white;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+  }
+
+  article {
+    background-color: #f7f7f7;
+  }
+
+  #restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .restaurants-block {
+    border-radius: 20px;
+    width: 90%;
+    background-color: violet;
+    height: 260px;
+    position: relative;
+    margin-bottom: 20px;
+  }
   .restaurants-block img {
     object-fit: cover;
     width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 190px;
+  }
+
+  .restaurants-block__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .restaurants-block__new {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #99E2D0;
+    height: 27px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1aa182;
+  }
+
+  .restaurants-block__info-text {
+    margin-left: 10px;
+  }
+  .restaurants-block__info-text h3, .restaurants-block__info-text p {
+    line-height: 7px;
+  }
+
+  .fa-heart {
+    margin-right: 20px;
   }
 }
 
