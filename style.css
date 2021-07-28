@@ -26,6 +26,8 @@ html {
   #logo {
     display: flex;
     justify-content: center;
+    font-size: x-large;
+    line-height: 5px;
   }
 
   #title {
@@ -44,6 +46,9 @@ html {
     -webkit-box-shadow: inset 0px 5px 8px -6px rgba(0, 0, 0, 0.47);
     box-shadow: inset 0px 5px 8px -6px rgba(0, 0, 0, 0.47);
   }
+  #title-city p {
+    padding-left: 15px;
+  }
 
   #title-text {
     display: flex;
@@ -52,25 +57,35 @@ html {
     text-align: center;
     margin-bottom: 60px;
   }
-
+  #title-text h1 {
+    font-size: xx-large;
+    margin-top: 40px;
+    margin-bottom: -10px;
+  }
+  #title-text p {
+    font-size: x-large;
+  }
   #title-text #title-text-btn {
     border-radius: 30px;
     background: #cd56dc;
     background: linear-gradient(166deg, #cd56dc 43%, #9356dc 100%);
     color: white;
-    height: 40px;
-    width: 50%;
+    height: 50px;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 130%;
+    -webkit-box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.4);
   }
 
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  #nav-title {
+    margin-left: 4%;
+    margin-top: 40px;
   }
-  nav section {
+
+  #nav-container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -80,7 +95,7 @@ html {
   .nav-selector, .nav-selector div {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .nav-selector {
@@ -88,37 +103,55 @@ html {
     background-color: #f7f7f7;
     position: relative;
     width: 90%;
-    margin-bottom: 15px;
-    height: 60px;
+    margin-bottom: 25px;
+    height: 70px;
+    -webkit-box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.23);
+    box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.23);
+  }
+  .nav-selector div {
+    width: 100%;
+    margin-left: 10%;
+  }
+  .nav-selector div p {
+    margin-left: 10%;
   }
   .nav-selector .nav-selector-number {
     position: absolute;
-    left: -5px;
+    left: -2%;
     border-radius: 30px;
     background-color: #9356DC;
     color: white;
-    width: 5%;
+    width: 7%;
+    height: 38%;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   article {
     background-color: #f7f7f7;
+    height: 1300px;
+  }
+  article h2 {
+    margin-left: 5%;
   }
 
   #restaurants {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 0%;
   }
 
   .restaurants-block {
     border-radius: 20px;
     width: 90%;
-    background-color: violet;
+    background-color: white;
     height: 260px;
     position: relative;
     margin-bottom: 20px;
+    -webkit-box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.23);
+    box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.23);
   }
   .restaurants-block img {
     object-fit: cover;
@@ -155,6 +188,14 @@ html {
 
   .fa-heart {
     margin-right: 20px;
+  }
+
+  footer {
+    background-color: #272525;
+    color: white;
+  }
+  footer h2, footer p {
+    margin-left: 5%;
   }
 }
 
