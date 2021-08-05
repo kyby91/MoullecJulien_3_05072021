@@ -1,1 +1,227 @@
-@font-face{font-family:"Roboto";src:url("police/Roboto-Medium.ttf")}@font-face{font-family:"Shrikhand";src:url("police/Shrikhand-Regular.ttf")}html{font-family:"Roboto"}@media screen and (max-width: 480px){header,main,footer,html{width:100%}html,body{margin:0}h1{font-family:"Shrikhand"}#logo{display:flex;justify-content:center;font-size:x-large;line-height:5px}#title{display:flex;flex-direction:column;align-items:center;background-color:#f7f7f7}#title-city{display:flex;align-items:center;justify-content:center;width:100%;background-color:#dfdfdf;-webkit-box-shadow:inset 0px 5px 8px -6px rgba(0,0,0,.47);box-shadow:inset 0px 5px 8px -6px rgba(0,0,0,.47)}#title-city p{padding-left:15px}#title-text{display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:60px}#title-text h1{font-size:xx-large;margin-top:40px;margin-bottom:-10px}#title-text p{font-size:x-large}#title-text #title-text-btn{border-radius:30px;background:#cd56dc;background:linear-gradient(166deg, #cd56dc 43%, #9356dc 100%);color:#fff;height:50px;width:70%;display:flex;justify-content:center;align-items:center;font-size:130%;-webkit-box-shadow:0px 9px 10px 0px rgba(0,0,0,.4);box-shadow:0px 9px 10px 0px rgba(0,0,0,.4)}#nav-title{margin-left:4%;margin-top:40px}#nav-container{width:100%;display:flex;flex-direction:column;align-items:center;margin-bottom:40px}.nav-selector,.nav-selector div{display:flex;align-items:center;justify-content:flex-start}.nav-selector{border-radius:20px;background-color:#f7f7f7;position:relative;width:90%;margin-bottom:25px;height:70px;-webkit-box-shadow:0px 4px 7px 1px rgba(0,0,0,.23);box-shadow:0px 4px 7px 1px rgba(0,0,0,.23)}.nav-selector div{width:100%;margin-left:10%}.nav-selector div p{margin-left:10%}.nav-selector .nav-selector-number{position:absolute;left:-2%;border-radius:30px;background-color:#9356dc;color:#fff;width:7%;height:38%;display:flex;justify-content:center;align-items:center}article{background-color:#f7f7f7;padding-bottom:60px}article h2{margin-left:5%;padding-top:40px}#restaurants{display:flex;flex-direction:column;align-items:center;margin-top:0%}.restaurants-block{border-radius:20px;width:90%;background-color:#fff;height:260px;position:relative;margin-bottom:20px;-webkit-box-shadow:0px 4px 7px 1px rgba(0,0,0,.23);box-shadow:0px 4px 7px 1px rgba(0,0,0,.23)}.restaurants-block img{object-fit:cover;width:100%;border-top-left-radius:20px;border-top-right-radius:20px;height:190px}.restaurants-block__info{display:flex;justify-content:space-between}.restaurants-block__new{position:absolute;right:10px;top:10px;background-color:#99e2d0;height:27px;width:70px;display:flex;align-items:center;justify-content:center;color:#1aa182}.restaurants-block__info-text{margin-left:10px}.restaurants-block__info-text h3,.restaurants-block__info-text p{line-height:7px}.fa-heart{margin-right:20px}footer{background-color:#272525;color:#cfcfcf;padding-top:20px;padding-bottom:20px}footer h2,footer p{margin-left:5%;line-height:10px}footer h2{font-family:"Shrikhand";font-size:medium}}/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "Roboto";
+  src: url("police/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("police/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("police/Shrikhand-Regular.otf");
+}
+html {
+  font-family: "Roboto";
+}
+
+@media screen and (max-width: 480px) {
+  header, main, footer, html {
+    width: 100%;
+  }
+
+  html, body {
+    margin: 0;
+  }
+
+  #logo {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    line-height: 5px;
+    font-family: "Shrikhand";
+  }
+
+  #title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f7f7;
+  }
+
+  #title-city {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #dfdfdf;
+    -webkit-box-shadow: inset 0px 5px 8px -6px rgba(0, 0, 0, 0.47);
+    box-shadow: inset 0px 5px 8px -6px rgba(0, 0, 0, 0.47);
+  }
+  #title-city p {
+    padding-left: 15px;
+  }
+
+  #title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  #title-text h1 {
+    font-size: x-large;
+    margin-top: 40px;
+    margin-bottom: -10px;
+    width: 70%;
+  }
+  #title-text p {
+    font-size: medium;
+    font-family: "Roboto-Light";
+    width: 80%;
+  }
+  #title-text #title-text-btn {
+    border-radius: 30px;
+    background: #eb75fa;
+    background: linear-gradient(166deg, #eb75fa 33%, #9356dc 100%);
+    color: #eeeeee;
+    height: 50px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    -webkit-box-shadow: 0px 7px 9px -6px rgba(0, 0, 0, 0.58);
+    box-shadow: 0px 7px 9px -6px rgba(0, 0, 0, 0.58);
+    font-family: "Roboto";
+  }
+
+  #nav-title {
+    margin-left: 4%;
+    margin-top: 40px;
+  }
+
+  #nav-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  #nav-container i {
+    color: gray;
+  }
+
+  .nav-selector, .nav-selector div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .nav-selector {
+    border-radius: 20px;
+    background-color: #f7f7f7;
+    position: relative;
+    width: 90%;
+    margin-bottom: 25px;
+    height: 70px;
+    -webkit-box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.23);
+    box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.23);
+  }
+  .nav-selector div {
+    width: 100%;
+    margin-left: 10%;
+  }
+  .nav-selector div p {
+    margin-left: 10%;
+  }
+  .nav-selector .nav-selector-number {
+    position: absolute;
+    left: -2%;
+    border-radius: 30px;
+    background-color: #9356DC;
+    color: white;
+    width: 7%;
+    height: 38%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  article {
+    background-color: #f7f7f7;
+    padding-bottom: 60px;
+  }
+  article h2 {
+    margin-left: 5%;
+    padding-top: 40px;
+  }
+
+  #restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0%;
+  }
+  #restaurants i {
+    font-size: x-large;
+    color: gray;
+  }
+
+  .restaurants-block {
+    border-radius: 20px;
+    width: 90%;
+    background-color: white;
+    height: 270px;
+    position: relative;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.23);
+    box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.23);
+  }
+  .restaurants-block img {
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 190px;
+  }
+
+  .restaurants-block__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .restaurants-block__new {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #99E2D0;
+    height: 30px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1aa182;
+    border-radius: 2px;
+  }
+
+  .restaurants-block__info-text {
+    margin-left: 12px;
+  }
+  .restaurants-block__info-text h3, .restaurants-block__info-text p {
+    line-height: 7px;
+  }
+  .restaurants-block__info-text p {
+    font-family: "Roboto-Light";
+  }
+
+  .fa-heart {
+    margin-right: 20px;
+  }
+
+  footer {
+    background-color: #272525;
+    color: #cfcfcf;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  footer h2, footer p {
+    margin-left: 5%;
+    line-height: 10px;
+  }
+  footer h2 {
+    font-family: "Shrikhand";
+    font-size: medium;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
