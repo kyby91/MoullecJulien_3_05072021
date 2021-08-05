@@ -97,9 +97,6 @@ html {
     align-items: center;
     margin-bottom: 40px;
   }
-  #nav-container i {
-    color: gray;
-  }
 
   .nav-selector, .nav-selector div {
     display: flex;
@@ -135,6 +132,9 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .nav-selector i {
+    color: gray;
   }
 
   article {
@@ -175,6 +175,11 @@ html {
     height: 190px;
   }
 
+  .restaurants-block__info-text:visited {
+    color: black;
+    text-decoration: unset;
+  }
+
   .restaurants-block__info {
     display: flex;
     justify-content: space-between;
@@ -196,6 +201,8 @@ html {
 
   .restaurants-block__info-text {
     margin-left: 12px;
+    color: black;
+    text-decoration: unset;
   }
   .restaurants-block__info-text h3, .restaurants-block__info-text p {
     line-height: 7px;
@@ -221,6 +228,13 @@ html {
   footer h2 {
     font-family: "Shrikhand";
     font-size: medium;
+  }
+
+  .nav-selector:hover {
+    background-color: #fbe5ff;
+  }
+  .nav-selector:hover i {
+    color: #9356DC;
   }
 }
 
