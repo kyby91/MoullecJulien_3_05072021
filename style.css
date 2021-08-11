@@ -146,6 +146,10 @@ html {
     padding-top: 40px;
   }
 
+  a {
+    text-decoration: unset;
+  }
+
   #restaurants {
     display: flex;
     flex-direction: column;
