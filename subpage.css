@@ -15,191 +15,252 @@ html, body {
   margin: 0;
 }
 
-@media screen and (max-width: 480px) {
-  header, main, footer {
-    width: 100%;
-  }
+header, main, footer {
+  width: 100%;
+}
 
-  header {
-    z-index: 1;
-  }
-  header img {
-    width: 100%;
-  }
+header {
+  z-index: 1;
+}
+header img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
 
-  #title h1 {
-    font-family: "Shrikhand";
-    line-height: 5px;
-  }
+#title h1 {
+  font-family: "Shrikhand";
+  line-height: 5px;
+}
 
-  #title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+#title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  a {
-    position: absolute;
-    left: 25px;
-    font-size: 20px;
-    color: black;
-  }
+a {
+  position: absolute;
+  left: 25px;
+  font-size: 20px;
+  color: black;
+}
 
-  main {
-    z-index: 2;
-    position: relative;
-    top: -45px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    background-color: #f7f7f7;
-  }
+main {
+  z-index: 2;
+  position: relative;
+  top: -45px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background-color: #f7f7f7;
+}
 
-  .menu {
-    animation: slide-top1 0.5s linear both;
-  }
+.menu {
+  animation: slide-top1 0.5s linear both;
+}
 
-  .menu:nth-child(3) {
-    animation: slide-top2 1s linear both;
-  }
+.menu:nth-child(3) {
+  animation: slide-top2 1s linear both;
+}
 
-  .menu:nth-child(4) {
-    animation: slide-top3 1.5s linear both;
-  }
+.menu:nth-child(4) {
+  animation: slide-top3 1.5s linear both;
+}
 
-  @keyframes slide-top1 {
-    0% {
-      transform: translateY(200px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0px);
-    }
+@keyframes slide-top1 {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
   }
-  @keyframes slide-top2 {
-    0% {
-      transform: translateY(400px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0px);
-    }
+  100% {
+    transform: translateY(0px);
   }
-  @keyframes slide-top3 {
-    0% {
-      transform: translateY(600px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0px);
-    }
+}
+@keyframes slide-top2 {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
   }
-  #main-title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  100% {
+    transform: translateY(0px);
   }
-  #main-title h1 {
-    padding-top: 20px;
-    font-family: "Shrikhand";
-    margin-left: 20px;
+}
+@keyframes slide-top3 {
+  0% {
+    transform: translateY(150px);
+    opacity: 0;
   }
-  #main-title i {
-    padding-top: 20px;
-    font-size: x-large;
-    margin-right: 30px;
+  100% {
+    transform: translateY(0px);
   }
+}
+#main-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#main-title h1 {
+  padding-top: 20px;
+  font-family: "Shrikhand";
+  margin-left: 20px;
+}
+#main-title i {
+  padding-top: 20px;
+  font-size: x-large;
+  margin-right: 30px;
+}
 
-  .menu-title {
-    border-bottom: solid #99E2D0;
-    width: 40px;
-    align-items: center;
-    display: flex;
-    margin-left: 5%;
-    margin-bottom: 20px;
-  }
-  .menu-title h2 {
-    font-family: "Roboto-Light";
-    line-height: 10px;
-    font-size: medium;
-  }
+.menu-title {
+  border-bottom: solid #99E2D0;
+  width: 40px;
+  align-items: center;
+  display: flex;
+  margin-left: 5%;
+  margin-bottom: 20px;
+}
+.menu-title h2 {
+  font-family: "Roboto-Light";
+  line-height: 10px;
+  font-size: medium;
+}
 
-  .menu-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .menu-block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    background-color: white;
-    margin-bottom: 15px;
-    width: 90%;
-    -webkit-box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.33);
-    box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.33);
-  }
-  .menu-block .menu-block-text {
+.menu-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 15px;
+  width: 90%;
+  height: 74px;
+  -webkit-box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.33);
+}
+.menu-block .menu-block-text {
+  width: 80%;
+}
+.menu-block .menu-block-text h3 {
+  margin-left: 5%;
+  line-height: 16px;
+  font-size: medium;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu-block .menu-block-text p {
+  font-family: "Roboto-Light";
+  font-size: medium;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 5%;
+  line-height: 16px;
+  margin-top: 0;
+}
+.menu-block .menu-block-price {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  margin-bottom: 5%;
+}
+
+#button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+  margin-top: 25px;
+}
+#button input {
+  background: linear-gradient(166deg, #cd56dc 43%, #9356dc 100%);
+  color: #f1f1f1;
+  border-radius: 25px;
+  border: unset;
+  width: 50%;
+  height: 45px;
+  font-family: "Roboto-Bold";
+  font-size: 15px;
+  -webkit-box-shadow: 0px 6px 23px -3px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 6px 23px -3px rgba(0, 0, 0, 0.33);
+}
+
+footer {
+  background-color: #272525;
+  color: #cfcfcf;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-top: -45px;
+}
+footer h2, footer p {
+  margin-left: 5%;
+  line-height: 10px;
+}
+footer h2 {
+  font-family: "Shrikhand";
+  font-size: medium;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0%;
+  height: 74px;
+  position: absolute;
+  right: -10px;
+  overflow: hidden;
+  background-color: #99E2D0;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.fa-check-circle {
+  font-size: 30px;
+  color: white;
+}
+
+@keyframes text {
+  from {
     width: 80%;
   }
-  .menu-block .menu-block-text h3 {
-    margin-left: 5%;
-    line-height: 10px;
-    font-size: medium;
+  to {
+    width: 60%;
   }
-  .menu-block .menu-block-text p {
-    font-family: "Roboto-Light";
-    font-size: medium;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-left: 5%;
-    line-height: 16px;
-    margin-top: 0;
+}
+@keyframes slide {
+  from {
+    right: -25%;
   }
-  .menu-block .menu-block-price {
+  to {
+    right: 5%;
     width: 20%;
-    display: flex;
-    justify-content: center;
-    align-self: flex-end;
-    margin-bottom: 5%;
   }
-
-  #button {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 80px;
-    margin-top: 25px;
+}
+@keyframes turn {
+  50% {
+    transform: rotate(0.5turn);
   }
-  #button input {
-    background: linear-gradient(166deg, #cd56dc 43%, #9356dc 100%);
-    color: #f1f1f1;
-    border-radius: 25px;
-    border: unset;
-    width: 50%;
-    height: 45px;
-    font-family: "Roboto-Bold";
-    font-size: 15px;
-    -webkit-box-shadow: 0px 6px 23px -3px rgba(0, 0, 0, 0.33);
-    box-shadow: 0px 6px 23px -3px rgba(0, 0, 0, 0.33);
+  100% {
+    transform: rotate(1turn);
   }
-
-  footer {
-    background-color: #272525;
-    color: #cfcfcf;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    margin-top: -45px;
-  }
-  footer h2, footer p {
-    margin-left: 5%;
-    line-height: 10px;
-  }
-  footer h2 {
-    font-family: "Shrikhand";
-    font-size: medium;
-  }
+}
+.menu-block:hover {
+  justify-content: flex-start;
+}
+.menu-block:hover .box {
+  animation: slide 1s linear both;
+}
+.menu-block:hover .fa-check-circle {
+  animation: turn 1s linear forwards;
+}
+.menu-block:hover .menu-block-text {
+  animation: text 1s linear forwards;
 }
 
 /*# sourceMappingURL=subpage.css.map */
