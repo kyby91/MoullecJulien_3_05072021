@@ -133,7 +133,7 @@ main {
 .menu-block {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   border-radius: 10px;
   background-color: white;
   margin-bottom: 15px;
@@ -141,9 +141,12 @@ main {
   height: 74px;
   -webkit-box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.33);
   box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.33);
+  overflow: hidden;
+  position: relative;
 }
 .menu-block .menu-block-text {
   width: 80%;
+  transition: width 1s;
 }
 .menu-block .menu-block-text h3 {
   margin-left: 5%;
@@ -169,6 +172,8 @@ main {
   justify-content: center;
   align-self: flex-end;
   margin-bottom: 5%;
+  transition: transform 1s;
+  transform: translateX(0%);
 }
 
 #button {
@@ -188,6 +193,9 @@ main {
   font-size: 15px;
   -webkit-box-shadow: 0px 6px 23px -3px rgba(0, 0, 0, 0.33);
   box-shadow: 0px 6px 23px -3px rgba(0, 0, 0, 0.33);
+}
+#button:hover {
+  opacity: 0.8;
 }
 
 footer {
@@ -210,14 +218,16 @@ footer h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 0%;
+  width: 20%;
   height: 74px;
   position: absolute;
-  right: -10px;
   overflow: hidden;
   background-color: #99E2D0;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
+  right: 0%;
+  transition: transform 1s;
+  transform: translateX(100%);
 }
 
 .fa-check-circle {
@@ -225,23 +235,6 @@ footer h2 {
   color: white;
 }
 
-@keyframes text {
-  from {
-    width: 80%;
-  }
-  to {
-    width: 60%;
-  }
-}
-@keyframes slide {
-  from {
-    right: -25%;
-  }
-  to {
-    right: 5%;
-    width: 20%;
-  }
-}
 @keyframes turn {
   50% {
     transform: rotate(0.5turn);
@@ -254,13 +247,41 @@ footer h2 {
   justify-content: flex-start;
 }
 .menu-block:hover .box {
-  animation: slide 1s linear both;
+  transition: transform 1s;
+  transform: translateX(0%);
 }
 .menu-block:hover .fa-check-circle {
   animation: turn 1s linear forwards;
 }
 .menu-block:hover .menu-block-text {
-  animation: text 1s linear forwards;
+  width: 60%;
+}
+.menu-block:hover .menu-block-price {
+  transition: transform 1s;
+  transform: translateX(0%);
+}
+
+@media screen and (min-width: 961px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #main-title {
+    width: 100%;
+  }
+
+  .menu {
+    width: 32%;
+  }
+
+  #button {
+    margin-left: 48%;
+  }
+  #button input {
+    width: 120px;
+  }
 }
 
 /*# sourceMappingURL=subpage.css.map */
