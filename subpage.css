@@ -39,7 +39,7 @@ header img {
   justify-content: center;
 }
 
-a {
+header a {
   position: absolute;
   left: 25px;
   font-size: 20px;
@@ -205,10 +205,17 @@ footer {
 footer h2, footer p {
   margin-left: 5%;
   line-height: 10px;
+  font-size: medium;
 }
 footer h2 {
   font-family: "Shrikhand";
-  font-size: medium;
+}
+footer a:visited {
+  color: #cfcfcf;
+}
+
+a {
+  text-decoration: unset;
 }
 
 .box {
@@ -254,6 +261,24 @@ footer h2 {
   width: 60%;
 }
 
+.like {
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  color: #9356DC;
+}
+.like:hover {
+  animation: like 0.3s linear both;
+}
+
+@keyframes like {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @media screen and (min-width: 961px) {
   header img {
     height: 400px;
