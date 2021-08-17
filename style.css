@@ -378,7 +378,7 @@ footer a:visited {
   }
 
   .nav-selector {
-    width: 20%;
+    width: 26%;
   }
 
   article h2 {
@@ -394,6 +394,26 @@ footer a:visited {
 
   .restaurants-block {
     width: 23%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  #nav-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .nav-selector {
+    width: 29%;
+  }
+
+  #restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #restaurants a {
+    width: 48%;
+    min-width: 330px;
   }
 }
 
