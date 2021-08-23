@@ -116,8 +116,7 @@ body {
   border-radius: 20px;
   background-color: #f7f7f7;
   position: relative;
-  width: 90%;
-  max-width: 280px;
+  width: 92%;
   margin-bottom: 25px;
   height: 70px;
   -webkit-box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.23);
@@ -157,6 +156,7 @@ article h2 {
 
 a {
   text-decoration: unset;
+  color: #cfcfcf;
 }
 
 #restaurants {
@@ -167,6 +167,7 @@ a {
 }
 #restaurants .far {
   color: gray;
+  padding-top: 17px;
 }
 #restaurants i {
   font-size: x-large;
@@ -229,6 +230,7 @@ a {
 
 .like {
   position: absolute;
+  top: 17px;
   right: 0;
   opacity: 0;
   color: #9356DC;
@@ -367,6 +369,11 @@ footer a:visited {
     margin-top: 20px;
   }
 
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
   #nav-title {
     margin-top: 20px;
     margin-left: 5%;
@@ -374,13 +381,20 @@ footer a:visited {
 
   #nav-container {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 90%;
+    align-self: center;
   }
 
   .nav-selector {
     width: 26%;
+    max-width: 280px;
   }
 
+  article {
+    display: flex;
+    flex-direction: column;
+  }
   article h2 {
     padding-top: 20px;
     margin-left: 5%;
@@ -389,7 +403,9 @@ footer a:visited {
   #restaurants {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 90%;
+    align-self: center;
   }
 
   .restaurants-block {

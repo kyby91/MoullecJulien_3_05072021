@@ -56,15 +56,15 @@ main {
 }
 
 .menu {
-  animation: slide-top1 0.5s linear both;
+  animation: slide-top1 0.3s linear both;
 }
 
 .menu:nth-child(3) {
-  animation: slide-top2 1s linear both;
+  animation: slide-top2 0.6s linear both;
 }
 
 .menu:nth-child(4) {
-  animation: slide-top3 1.5s linear both;
+  animation: slide-top3 0.9s linear both;
 }
 
 @keyframes slide-top1 {
@@ -102,7 +102,7 @@ main {
 #main-title h1 {
   padding-top: 20px;
   font-family: "Shrikhand";
-  margin-left: 20px;
+  margin-left: 5%;
 }
 #main-title i {
   padding-top: 20px;
@@ -137,7 +137,6 @@ main {
   background-color: white;
   margin-bottom: 15px;
   width: 90%;
-  max-width: 430px;
   height: 74px;
   -webkit-box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.33);
   box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.33);
@@ -149,7 +148,7 @@ main {
   transition: width 1s;
 }
 .menu-block .menu-block-text h3 {
-  margin-left: 5%;
+  margin-left: 10px;
   line-height: 16px;
   font-size: medium;
   white-space: nowrap;
@@ -162,7 +161,7 @@ main {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin-left: 5%;
+  margin-left: 10px;
   line-height: 16px;
   margin-top: 0;
 }
@@ -171,7 +170,7 @@ main {
   display: flex;
   justify-content: center;
   align-self: flex-end;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 #button {
@@ -289,6 +288,7 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   #main-title {
@@ -296,16 +296,19 @@ a {
   }
 
   .menu {
-    width: 32%;
+    width: 26.5%;
   }
 
   #button {
-    margin-left: 46%;
+    width: 100%;
   }
   #button input {
     width: 120px;
   }
 
+  #main-title i {
+    margin-right: 5%;
+  }
   #main-title h1 {
     margin-left: 5%;
   }
@@ -315,9 +318,9 @@ a {
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 5%;
     align-items: stretch;
     justify-content: center;
+    padding-bottom: 30px;
   }
 
   #main-title {
@@ -329,8 +332,12 @@ a {
 
   .menu {
     width: 45%;
-    min-width: 240px;
     justify-content: center;
+    margin-right: 2.5%;
+  }
+
+  .menu-block .menu-block-price {
+    margin-bottom: 10px;
   }
 
   #button {
@@ -339,6 +346,11 @@ a {
     justify-content: center;
     margin-top: 20%;
     min-width: 200px;
+    margin-right: 2.5%;
+  }
+
+  #main-title i {
+    margin-right: 8%;
   }
 }
 
